@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SmartHR | Programa de Embajadores Referidores</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#1A1B39;--green:#2FA55E;--mint:#E9F7EF;--ink:#252640;--muted:#697087;--line:#E4E7EF;--paper:#F6F8FB;--white:#fff;--soft:#F0F2F7}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:14px/1.65 'Poppins',sans-serif}h1,h2,h3,h4,.display{font-family:'Fredoka',sans-serif;letter-spacing:-.025em;line-height:1.15;margin:0}p{margin:8px 0 0}button,a,input{font:inherit}.layout{display:grid;grid-template-columns:240px minmax(0,1fr);min-height:100vh}.sidebar{background:var(--navy);color:#fff;padding:25px 17px;position:sticky;top:0;height:100vh;overflow:auto}.brand{font:600 27px 'Fredoka',sans-serif}.brand span{color:#62D58C}.side-sub{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#ADB4D0;margin:2px 0 28px}.nav-label{font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:#9299B9;margin:20px 10px 7px}.nav a{display:block;text-decoration:none;color:#D9DCEF;padding:10px 11px;border-radius:9px;font-size:11px;margin:3px 0}.nav a:hover,.nav a.active{background:#2D3156;color:#fff}.nav a.active{border-left:3px solid #62D58C}.sidebar-note{margin-top:28px;padding:13px;border:1px solid #3C4169;border-radius:13px;color:#D4D8E9;font-size:10px}.sidebar-note b{color:#7DE2A0}.main{min-width:0}.topbar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px 4%;border-bottom:1px solid var(--line);background:#fffffff0;position:sticky;top:0;z-index:5}.eyebrow,.kicker{font-size:9px;letter-spacing:.15em;text-transform:uppercase;font-weight:700;color:var(--green)}.top-title{font-size:12px;font-weight:600;color:var(--navy)}.actions{display:flex;gap:7px}.btn{border:1px solid var(--line);background:white;padding:8px 11px;border-radius:8px;font-size:10px;font-weight:600;color:var(--navy);cursor:pointer}.btn.primary{background:var(--green);border-color:var(--green);color:white}.content{max-width:1240px;margin:auto;padding:28px 4% 65px}.hero{background:var(--navy);color:#fff;border-radius:22px;padding:clamp(28px,5vw,60px);position:relative;overflow:hidden;min-height:345px;display:flex;align-items:center}.hero:before{content:"";position:absolute;width:340px;height:340px;border-radius:50%;border:1px solid #454A73;right:-85px;top:-120px;box-shadow:0 0 0 35px #ffffff04,0 0 0 75px #ffffff04}.hero:after{content:"";position:absolute;width:180px;height:180px;border-radius:50%;background:var(--green);opacity:.18;right:100px;bottom:-100px}.hero-inner{max-width:710px;position:relative;z-index:1}.pill{display:inline-flex;align-items:center;gap:7px;border:1px solid #4B5278;background:#272B4C;padding:7px 11px;border-radius:100px;color:#DDE5F7;font-size:9px;font-weight:600;letter-spacing:.07em;text-transform:uppercase}.dot{width:7px;height:7px;border-radius:50%;background:#69DA93}.hero h1{font-size:clamp(38px,5.1vw,65px);margin:22px 0 13px}.hero h1 em{font-style:normal;color:#6BE095}.hero p{font-size:14px;color:#D4D8E9;max-width:620px}.hero-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:24px}.hero-tags span{border:1px solid #42486C;border-radius:8px;padding:7px 10px;font-size:9px;color:#E5E8F3}.section{margin-top:42px;scroll-margin-top:78px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:17px}.section-head h2{font-size:clamp(25px,3vw,34px);color:var(--navy)}.section-head p{max-width:550px;color:var(--muted);font-size:11px}.kicker{margin-bottom:7px}.grid{display:grid;gap:13px}.four{grid-template-columns:repeat(4,minmax(0,1fr))}.three{grid-template-columns:repeat(3,minmax(0,1fr))}.two{grid-template-columns:repeat(2,minmax(0,1fr))}.card{background:white;border:1px solid var(--line);border-radius:15px;padding:19px;min-width:0}.card h3{font-size:19px;color:var(--navy)}.card p,.card li{font-size:11px;color:var(--muted)}.metric{font:32px/1.1 'Fredoka',sans-serif;color:var(--green)}.metric-label{font-size:10px;color:var(--muted);margin-top:7px}.iconbox{width:38px;height:38px;display:grid;place-items:center;border-radius:11px;background:var(--mint);color:var(--green);font-size:18px;margin-bottom:13px}.highlight{background:var(--mint);border:1px solid #CBEBD7;border-radius:15px;padding:21px}.highlight h3{font-size:22px;color:var(--navy)}.highlight p{font-size:11px;color:#4C6859}.tag{display:inline-block;background:var(--soft);color:#515771;border-radius:6px;padding:4px 7px;font-size:9px;font-weight:600;margin-top:10px}.tag.green{background:var(--mint);color:#247947}.list{padding-left:17px;margin:10px 0 0}.list li{padding:3px 0}.profile{border-top:3px solid var(--green)}.small{font-size:9px;text-transform:uppercase;letter-spacing:.1em;color:var(--green);font-weight:700}.timeline{border-left:2px solid #D7EBDD;margin:10px 0 0 8px;padding-left:21px}.timeline-item{position:relative;padding:0 0 17px}.timeline-item:before{content:"";position:absolute;left:-28px;top:5px;width:9px;height:9px;border:3px solid white;border-radius:50%;background:var(--green);box-shadow:0 0 0 1px #B5E3C5}.timeline-item h3{font-size:16px}.timeline-item p{font-size:11px;color:var(--muted)}.table-wrap{overflow-x:auto;background:#fff;border:1px solid var(--line);border-radius:13px}table{border-collapse:collapse;width:100%;min-width:580px}th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);font-size:10px}th{background:#F8F9FC;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:9px}td strong{color:var(--navy)}tr:last-child td{border-bottom:0}.note{background:#FFFAE9;border:1px solid #F1E3B3;border-radius:10px;padding:12px;font-size:10px;color:#6F5D29}.callout{border-radius:15px;background:var(--navy);color:white;padding:24px;display:flex;align-items:center;justify-content:space-between;gap:20px}.callout h3{font-size:24px}.callout p{font-size:11px;color:#D6DAEA;max-width:620px}.callout .big{font:36px 'Fredoka',sans-serif;color:#6BE095;white-space:nowrap}.checklist label{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--line);font-size:11px;cursor:pointer}.checklist label:last-child{border-bottom:0}.checklist input{accent-color:var(--green);margin-top:4px}.checklist input:checked+span{text-decoration:line-through;color:#9296A7}.footer{border-top:1px solid var(--line);padding:22px 0;margin-top:38px;display:flex;justify-content:space-between;gap:15px;color:var(--muted);font-size:9px}.footer b{font:16px 'Fredoka',sans-serif;color:var(--navy)}@media(max-width:1020px){.layout{grid-template-columns:200px minmax(0,1fr)}.four{grid-template-columns:repeat(2,minmax(0,1fr))}.section-head{display:block}.section-head p{margin-top:8px}}@media(max-width:740px){.layout{display:block}.sidebar{position:relative;height:auto;padding:14px 15px}.nav{display:flex;overflow-x:auto;gap:3px}.nav-label,.sidebar-note,.side-sub{display:none}.nav a{white-space:nowrap}.topbar{position:relative;padding:12px 15px}.content{padding:18px 14px 40px}.hero{min-height:auto}.three,.two{grid-template-columns:1fr}.callout{display:block}.callout .big{font-size:27px;margin-top:12px}.footer{display:block}.footer div+div{margin-top:8px}}@media(max-width:420px){.four{grid-template-columns:1fr 1fr}.hero h1{font-size:38px}.actions .btn:first-child{display:none}}@media print{body{background:#fff;font-size:10px}.layout{display:block}.sidebar,.topbar,.no-print{display:none!important}.content{max-width:none;padding:0}.hero{border-radius:0;min-height:auto;padding:30px}.section{margin-top:23px;break-inside:avoid}.card,.highlight{break-inside:avoid;box-shadow:none}.four{grid-template-columns:repeat(4,1fr)}.three{grid-template-columns:repeat(3,1fr)}.footer{margin-top:15px}.hero h1{font-size:43px}}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+  <div class="brand">Smart<span>HR</span></div>
+  <div class="side-sub">Growth · Alianzas · Perú</div>
+  <nav class="nav">
+    <div class="nav-label">Propuesta</div>
+    <a href="#vision" class="active">01 · Visión</a>
+    <a href="#modelo">02 · Modelo referidor</a>
+    <a href="#reactivacion">03 · Reactivación</a>
+    <a href="#captacion">04 · Captación</a>
+    <a href="#operacion">05 · Operación</a>
+    <a href="#metricas">06 · Métricas</a>
+    <a href="#roadmap">07 · Plan 90 días</a>
+  </nav>
+  <div class="sidebar-note"><b>Principio de Growth</b><br>Menos registros inactivos. Más referidores que generan oportunidades calificadas y revenue sostenible.</div>
+</aside>
+<main class="main">
+<header class="topbar">
+  <div><div class="eyebrow">Propuesta estratégica</div><div class="top-title">Programa de Embajadores Referidores</div></div>
+  <div class="actions"><button class="btn primary" onclick="document.getElementById('roadmap').scrollIntoView({behavior:'smooth'})">Ver plan de acción ↓</button></div>
+</header>
+<div class="content">
+<section class="hero" id="vision">
+ <div class="hero-inner">
+  <div class="pill"><span class="dot"></span> Nueva etapa · Canal de adquisición B2B</div>
+  <h1>De relaciones de confianza a una <em>máquina de leads.</em></h1>
+  <p>Reactivar la red histórica de SmartHR y construir un canal de referidores que conecte a la empresa con oportunidades comerciales de calidad, a través de profesionales que ya tienen la confianza de sus clientes.</p>
+  <div class="hero-tags"><span>01 · Reactivar relaciones</span><span>02 · Activar referidores</span><span>03 · Escalar con datos</span></div>
+ </div>
+</section>
+<section class="section">
+ <div class="section-head"><div><div class="kicker">Resumen ejecutivo</div><h2>La oportunidad</h2></div><p>El objetivo no es sumar nombres a una base de datos. Es desarrollar una fuente de oportunidades repetible, medible y rentable.</p></div>
+ <div class="grid four">
+  <div class="card"><div class="iconbox">↻</div><div class="metric">5</div><div class="metric-label">Embajadores históricos identificados y actualizados en Monday</div></div>
+  <div class="card"><div class="iconbox">◎</div><div class="metric">3 + 2</div><div class="metric-label">Tres relaciones con mayor potencial y dos perfiles junior por reactivar</div></div>
+  <div class="card"><div class="iconbox">↗</div><div class="metric">1</div><div class="metric-label">Landing de embajadores como punto de entrada del programa</div></div>
+  <div class="card"><div class="iconbox">◈</div><div class="metric">90 días</div><div class="metric-label">Horizonte propuesto para validar, aprender y escalar el canal</div></div>
+ </div>
+</section>
+<section class="section">
+ <div class="highlight"><div class="kicker">Tesis de Growth</div><h3>El referidor no tiene que vender SmartHR. Tiene que reconocer una necesidad y abrir una puerta.</h3><p>SmartHR se encarga de calificar, contactar, diagnosticar, demostrar y cerrar. El referidor aporta contexto y confianza; la experiencia comercial debe proteger su reputación y mantenerlo informado.</p></div>
+</section>
+<section class="section" id="modelo">
+ <div class="section-head"><div><div class="kicker">Diseño del programa</div><h2>Un modelo simple para referir</h2></div><p>Empezamos por el modelo más ligero: la persona conecta a SmartHR con una empresa que podría necesitar la solución. No tiene que negociar ni realizar demos.</p></div>
+ <div class="grid three">
+  <div class="card"><div class="iconbox">01</div><h3>Detecta</h3><p>Identifica una señal de necesidad: crecimiento de personal, procesos manuales, asistencia, planillas o gestión documentaria.</p></div>
+  <div class="card"><div class="iconbox">02</div><h3>Conecta</h3><p>Con permiso del contacto, registra la empresa y el contexto mínimo en el formulario o canal definido por SmartHR.</p></div>
+  <div class="card"><div class="iconbox">03</div><h3>Recibe seguimiento</h3><p>SmartHR confirma la recepción, gestiona la oportunidad y comunica el estado permitido. La comisión aplica según términos acordados.</p></div>
+ </div>
+ <div class="grid two" style="margin-top:13px">
+  <div class="card"><div class="kicker">Propuesta de valor</div><h3>¿Qué gana el referidor?</h3><ul class="list"><li>Ingresos por referencias convertidas, conforme al acuerdo.</li><li>Proceso sencillo y sin obligación de vender.</li><li>Confirmación de recepción y seguimiento de la oportunidad.</li><li>Recursos y formación para detectar mejores oportunidades.</li><li>Relación de largo plazo con un equipo que cuida a sus contactos.</li></ul></div>
+  <div class="card"><div class="kicker">Reglas de confianza</div><h3>¿Qué debe garantizar SmartHR?</h3><ul class="list"><li>Responder a las referencias dentro del SLA definido.</li><li>Evitar duplicidades con reglas claras de atribución.</li><li>Explicar condiciones, pagos y elegibilidad de forma transparente.</li><li>No compartir información confidencial innecesariamente.</li><li>Tratar al cliente referido con una experiencia comercial excelente.</li></ul></div>
+ </div>
+ <p class="note" style="margin-top:13px"><strong>Pendiente antes del lanzamiento:</strong> validar comisión, duración, base de cálculo, tratamiento de impagos/cancelaciones, atribución y periodicidad de pago. No comunicar porcentajes hasta aprobar la política económica.</p>
+</section>
+<section class="section" id="reactivacion">
+ <div class="section-head"><div><div class="kicker">Fase 1 · Relaciones públicas</div><h2>Reactivar con reconocimiento</h2></div><p>La primera campaña recupera la confianza y escucha. El box desayuno es un gesto personal, no un incentivo condicionado a vender.</p></div>
+ <div class="grid three">
+  <div class="card profile"><div class="small">Prioridad alta · 2 personas</div><h3 style="margin:8px 0">Consultores independientes</h3><p>Recuperar el hábito de referir y entender su cartera actual.</p><ul class="list"><li>Contacto personal antes del envío.</li><li>Box y tarjeta de agradecimiento.</li><li>Reunión de escucha de 20 minutos.</li><li>Acordar una primera acción de activación.</li></ul><span class="tag green">Meta piloto: 1 referencia potencial por persona</span></div>
+  <div class="card profile"><div class="small">Prioridad estratégica · 1 persona</div><h3 style="margin:8px 0">Embajador en una empresa</h3><p>Explorar si la relación individual puede abrir una vía institucional.</p><ul class="list"><li>Reconocer su aporte histórico.</li><li>Mapear áreas y clientes relevantes.</li><li>Validar autorizaciones internas.</li><li>Proponer una conversación exploratoria.</li></ul><span class="tag green">Meta piloto: reunión exploratoria</span></div>
+  <div class="card profile"><div class="small">Activación gradual · 2 personas</div><h3 style="margin:8px 0">Perfiles junior / fríos</h3><p>Descubrir si tienen acceso a decisores y motivación para participar.</p><ul class="list"><li>Mensaje breve y cercano.</li><li>Presentación simple del programa.</li><li>Invitación a una sesión informativa.</li><li>Primera acción pequeña y concreta.</li></ul><span class="tag">Meta piloto: conversación + acción</span></div>
+ </div>
+ <div class="grid two" style="margin-top:13px">
+  <div class="card"><div class="kicker">Secuencia sugerida</div><h3>Contacto sin presión</h3><div class="timeline">
+   <div class="timeline-item"><h3>Día 1 · Reconectar</h3><p>WhatsApp o llamada personal; confirmar dónde enviar el detalle.</p></div>
+   <div class="timeline-item"><h3>Día 3–5 · Agradecer</h3><p>Entregar el box con tarjeta y QR a la página de bienvenida.</p></div>
+   <div class="timeline-item"><h3>Día 5–10 · Escuchar</h3><p>Conversación breve para entender barreras, necesidades y motivaciones.</p></div>
+   <div class="timeline-item"><h3>Día 14–30 · Activar</h3><p>Entregar un recurso útil y acordar la primera referencia potencial.</p></div>
+  </div></div>
+  <div class="card"><div class="kicker">Mensaje de la tarjeta</div><h3>Seguimos creciendo juntos.</h3><p style="font-size:12px;color:var(--ink)">Gracias por haber sido parte del camino de SmartHR y por la confianza que nos brindaste al recomendarnos con otras empresas.</p><p style="font-size:12px;color:var(--ink)">Hoy estamos dando una nueva etapa a nuestro programa de referidores, con beneficios por las oportunidades que nos ayudes a conectar y una propuesta pensada para construir relaciones de largo plazo.</p><p style="font-size:12px;color:var(--ink)">Nos encantaría contarte las novedades y explorar cómo podemos volver a generar oportunidades juntos.</p><p style="font-weight:600;color:var(--navy)">Equipo SmartHR</p></div>
+ </div>
+</section>
+<section class="section" id="captacion">
+ <div class="section-head"><div><div class="kicker">Fase 2 · Adquisición</div><h2>Fuentes para captar nuevos referidores</h2></div><p>Priorizar profesionales que ya mantienen relaciones de confianza con empresas del perfil objetivo de SmartHR.</p></div>
+ <div class="grid three">
+  <div class="card"><div class="iconbox">▤</div><h3>Contadores y estudios</h3><p>Acceso recurrente a empresas y conversaciones sobre planillas, procesos y crecimiento.</p><span class="tag green">Prioridad A</span></div>
+  <div class="card"><div class="iconbox">⚖</div><h3>Abogados laboralistas</h3><p>Detectan necesidades de documentación, procesos laborales y orden operativo.</p><span class="tag green">Prioridad A</span></div>
+  <div class="card"><div class="iconbox">◎</div><h3>Consultores de RR. HH.</h3><p>Pueden identificar necesidades de selección, capacitación, desempeño y gestión.</p><span class="tag green">Prioridad A</span></div>
+  <div class="card"><div class="iconbox">▦</div><h3>Firmas complementarias</h3><p>Consultoras, proveedores de servicios empresariales y outsourcing no competidores.</p><span class="tag">Prioridad B</span></div>
+  <div class="card"><div class="iconbox">↗</div><h3>Comunidades profesionales</h3><p>Asociaciones, grupos de especialistas y organizadores de eventos sectoriales.</p><span class="tag">Prioridad B</span></div>
+  <div class="card"><div class="iconbox">✦</div><h3>Referidos de referidores</h3><p>Invitar a un profesional de confianza; reconocer la activación, no solo el registro.</p><span class="tag">Experimento</span></div>
+ </div>
+ <div class="grid two" style="margin-top:13px">
+  <div class="highlight"><div class="kicker">Idea de activación</div><h3>SmartHR Radar</h3><p>Una guía de cinco preguntas para identificar señales de necesidad: crecimiento de personal, múltiples sedes, asistencia manual, documentación dispersa o demasiado tiempo en procesos administrativos. El referidor ofrece una conexión con SmartHR solo si la empresa está interesada.</p></div>
+  <div class="card"><div class="kicker">Experimento de captación</div><h3>Primeras 4 semanas</h3><ul class="list"><li>Crear una lista de 50 perfiles objetivo.</li><li>Contactar 10 perfiles por semana con mensaje personalizado.</li><li>Invitar a una sesión breve de presentación.</li><li>Medir registro, activación y referencias válidas.</li><li>Escalar las fuentes que conviertan.</li></ul></div>
+ </div>
+</section>
+<section class="section" id="operacion">
+ <div class="section-head"><div><div class="kicker">Fase 3 · Sistema operativo</div><h2>Gestionar el canal desde Monday</h2></div><p>La relación debe ser personal; el seguimiento debe ser sistemático. Monday será la fuente de verdad para actividad, atribución y resultados.</p></div>
+ <div class="grid three">
+  <div class="card"><div class="iconbox">01</div><h3>Tablero de referidores</h3><p>Nombre, perfil, empresa, origen, estado, fecha de alta, última interacción, próxima actividad, referencias y resultados.</p></div>
+  <div class="card"><div class="iconbox">02</div><h3>Tablero de oportunidades</h3><p>Empresa, referidor, fecha, necesidad, validación, BDR/AE, etapa comercial, MRR elegible y comisión aprobada.</p></div>
+  <div class="card"><div class="iconbox">03</div><h3>Tablero de campañas</h3><p>Campaña, fuente, costo, participantes, activados, oportunidades calificadas, clientes ganados y retorno.</p></div>
+ </div>
+ <div class="card" style="margin-top:13px"><div class="kicker">Automatizaciones prioritarias</div><div class="table-wrap"><table><thead><tr><th>Disparador</th><th>Acción</th><th>Resultado</th></tr></thead><tbody>
+ <tr><td><strong>Nuevo referidor</strong></td><td>Crear tarea de bienvenida y asignar responsable.</td><td>Onboarding consistente.</td></tr>
+ <tr><td><strong>Nueva referencia</strong></td><td>Confirmar recepción y validar duplicidad.</td><td>Confianza y atribución.</td></tr>
+ <tr><td><strong>Lead validado</strong></td><td>Asignar BDR y fecha límite de contacto.</td><td>Respuesta rápida.</td></tr>
+ <tr><td><strong>Sin actualización</strong></td><td>Alertar al responsable comercial.</td><td>Menos oportunidades olvidadas.</td></tr>
+ <tr><td><strong>Venta + cobro confirmado</strong></td><td>Calcular comisión conforme al acuerdo.</td><td>Liquidación trazable.</td></tr>
+ </tbody></table></div><p style="font-size:10px;color:var(--muted)">SLA piloto sugerido: primer contacto en un día hábil desde la validación. Ajustar según capacidad real del equipo.</p></div>
+</section>
+<section class="section" id="metricas">
+ <div class="section-head"><div><div class="kicker">Medición de impacto</div><h2>El dashboard que importa</h2></div><p>La métrica principal es la producción de oportunidades rentables, no la cantidad de personas que completan un formulario.</p></div>
+ <div class="grid four">
+  <div class="card"><div class="metric">%</div><h3 style="font-size:16px;margin-top:7px">Activación</h3><p>Referidores que envían al menos una referencia válida.</p></div>
+  <div class="card"><div class="metric">#</div><h3 style="font-size:16px;margin-top:7px">Calidad</h3><p>Oportunidades calificadas por referidor activo.</p></div>
+  <div class="card"><div class="metric">S/</div><h3 style="font-size:16px;margin-top:7px">Revenue</h3><p>MRR y margen atribuibles a este canal.</p></div>
+  <div class="card"><div class="metric">↗</div><h3 style="font-size:16px;margin-top:7px">Eficiencia</h3><p>Costo por oportunidad y por cliente adquirido.</p></div>
+ </div>
+ <div class="table-wrap" style="margin-top:13px"><table><thead><tr><th>Métrica</th><th>Definición</th><th>Decisión que permite tomar</th></tr></thead><tbody>
+ <tr><td><strong>Tasa de activación</strong></td><td>Referidores con ≥1 referencia válida / referidores registrados.</td><td>Mejorar onboarding y propuesta de valor.</td></tr>
+ <tr><td><strong>Tasa de calificación</strong></td><td>Referencias calificadas / referencias recibidas.</td><td>Ajustar perfil objetivo y kit de detección.</td></tr>
+ <tr><td><strong>Conversión a cliente</strong></td><td>Clientes ganados / oportunidades referidas calificadas.</td><td>Evaluar calidad y ejecución comercial.</td></tr>
+ <tr><td><strong>Tiempo de respuesta</strong></td><td>Tiempo entre validación y primer contacto.</td><td>Corregir cuellos de botella comerciales.</td></tr>
+ <tr><td><strong>Rentabilidad del canal</strong></td><td>Margen atribuible frente a comisiones y costos del programa.</td><td>Decidir dónde escalar inversión.</td></tr>
+ </tbody></table></div>
+</section>
+<section class="section" id="roadmap">
+ <div class="section-head"><div><div class="kicker">Ejecución</div><h2>Roadmap de 90 días</h2></div><p>Primero validar la confianza y el proceso. Después encontrar fuentes repetibles. Finalmente escalar lo que demuestre rentabilidad.</p></div>
+ <div class="grid three">
+  <div class="card"><span class="tag green">Días 1–15</span><h3 style="margin-top:12px">Reactivar</h3><ul class="list"><li>Validar condiciones económicas.</li><li>Contactar a los cinco históricos.</li><li>Entrevistar y registrar barreras.</li><li>Definir etapas en Monday.</li></ul><p><strong>Entregable:</strong> aprendizajes y plan individual.</p></div>
+  <div class="card"><span class="tag green">Días 16–30</span><h3 style="margin-top:12px">Validar</h3><ul class="list"><li>Lanzar SmartHR Radar.</li><li>Crear kit de referidor.</li><li>Captar primeros nuevos perfiles.</li><li>Medir calidad y velocidad.</li></ul><p><strong>Entregable:</strong> evidencia de activación.</p></div>
+  <div class="card"><span class="tag green">Días 31–60</span><h3 style="margin-top:12px">Multiplicar</h3><ul class="list"><li>Realizar mesa educativa.</li><li>Contactar firmas y comunidades.</li><li>Probar contenido conjunto.</li><li>Automatizar seguimiento.</li></ul><p><strong>Entregable:</strong> fuentes de captación en evaluación.</p></div>
+  <div class="card"><span class="tag green">Días 61–90</span><h3 style="margin-top:12px">Escalar</h3><ul class="list"><li>Comparar perfiles y fuentes.</li><li>Analizar margen y conversión.</li><li>Optimizar incentivos.</li><li>Definir metas del siguiente ciclo.</li></ul><p><strong>Entregable:</strong> modelo documentado.</p></div>
+  <div class="card"><div class="kicker">Riesgo</div><h3>Muchos registros, poca actividad</h3><p>Simplificar el onboarding y priorizar personas con acceso real a decisores. No confundir interés inicial con capacidad de generar oportunidades.</p></div>
+  <div class="card"><div class="kicker">Riesgo</div><h3>Leads sin seguimiento</h3><p>Aplicar SLA, alertas y responsable visible. La reputación del referidor está en juego cada vez que conecta a un cliente.</p></div>
+ </div>
+</section>
+<section class="section">
+ <div class="callout"><div><div class="kicker" style="color:#6BE095">Resultado que buscamos</div><h3>Un canal confiable, medible y rentable.</h3><p>Un programa donde cada referidor sabe cómo participar, cada oportunidad tiene dueño y cada decisión de Growth se toma con datos de calidad, conversión y margen.</p></div><div class="big">Trust → Leads → Revenue</div></div>
+</section>
+<section class="section">
+ <div class="section-head"><div><div class="kicker">Checklist editable</div><h2>Preparación del lanzamiento</h2></div><p>Marca las tareas a medida que las completes. El checklist funciona mientras permanezca abierta esta página.</p></div>
+ <div class="card checklist">
+  <label><input type="checkbox"><span>Validar política de comisiones y condiciones con las áreas correspondientes.</span></label>
+  <label><input type="checkbox"><span>Revisar landing, formulario y mensaje de bienvenida.</span></label>
+  <label><input type="checkbox"><span>Personalizar tarjeta y coordinar entrega de los cinco boxes.</span></label>
+  <label><input type="checkbox"><span>Agendar conversaciones de reactivación y registrar aprendizajes.</span></label>
+  <label><input type="checkbox"><span>Definir criterio de lead válido, duplicidad y atribución.</span></label>
+  <label><input type="checkbox"><span>Configurar etapas, responsables y SLA en Monday.</span></label>
+  <label><input type="checkbox"><span>Preparar kit de referidor y SmartHR Radar.</span></label>
+  <label><input type="checkbox"><span>Definir dashboard y revisión semanal de resultados.</span></label>
+ </div>
+</section>
+<div class="footer"><div><b>SmartHR</b><br>Growth & Expansion · Perú</div><div>Propuesta de trabajo · Octubre 2026<br>Metas y cronograma sujetos a validación con el equipo.</div></div>
+</div>
+</main>
+</div>
+<script>
+const links=[...document.querySelectorAll('.nav a')];
+const sections=links.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
+if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting)links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+entry.target.id))}),{rootMargin:'-25% 0px -65% 0px'});sections.forEach(s=>observer.observe(s))}
+</script>
+</body>
+</html>
